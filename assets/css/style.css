@@ -1,0 +1,252 @@
+:root {
+    --primary: #99b898;
+    --secondary: #fecea8;
+    --tertiary: #ff847c;
+    --quaternary: #e84a5f;
+    --quinary: #2a363b;
+
+  } 
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      color: var(--secondary);
+      background-color: var(--quinary);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  /* Navigation Start */
+header {
+    padding: 15px 30px;
+    background-color: var(--quinary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--secondary);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+header nav {
+    margin: 7px 0px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.75vw;
+}
+
+header nav ul li a:hover {
+  background: var(--secondary);
+  color: var(--quinary);
+  border-radius: 3px;
+  font-weight: bold;
+}
+/* Navigation End*/
+
+
+
+/* Jumbotron Start*/
+.container {
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.image {
+    width: 80;
+    flex-basis: 40%;
+}
+
+.text {
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+.text p {
+    font-size: 22px;
+}
+
+/* Jumbotron End*/
+
+
+/* About start */
+#about-section {
+    clear: both;
+    padding: 50px;
+}
+
+.text1 {
+    font-size: 25px;
+}
+
+#about-section div p {
+    text-align: justify;
+    font-size: 20px;
+}
+/* About end */
+
+
+/* Portfolio start */
+.text2 {
+    padding-left: 50px;
+    font-size: 25px;
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.flex-row div {
+    margin: 5px;
+}
+
+#first-project {
+    
+    max-width: 95%;
+}
+
+#first-project img {
+    max-width: 100%;
+}
+
+.future {
+    max-width: 45%;
+}
+
+.future img {
+    max-width: 100%;
+}
+
+/* Portfolio end */
+
+
+
+/* Footer start */
+footer {
+    background: var(--quinary);
+    width: 100%;
+    padding: 20px 15px;
+
+}
+
+footer h3 {
+    color: var(--tertiary);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: center;
+}
+
+footer p {
+    color: var(--tertiary);
+    font-size: 18px;
+}
+
+footer a {
+    color: var(--tertiary);
+}
+/* Footer end */
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 980px) {
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    } 
+
+    header nav ul li a {
+        font-size: 30px;
+    }
+
+    #cover {
+        float: none;
+        width: 100%;
+    }
+
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .text {
+        padding-left: 10px;
+    }
+
+    #first-project {
+        max-width: 90%; 
+    }
+
+    #first-project img {
+        max-width: 100%;
+    }
+
+    .future {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header nav ul li a {
+        font-size: 28px;
+    }
+
+    .container {
+        display: inline;
+    }
+
+    .text {
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 575px) {
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .image img {
+        width: fit-content;
+    }
+
+    .flex-row {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
