@@ -29,6 +29,80 @@ font-family: 'Monoton', cursive;*/
     min-height: 100vh;
   }
 
+  /* navigation bar START */
+  .side-nav {
+    height: 100%;
+    width: 5%;
+    font-size: 30px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--tertiary);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .side-nav a {
+    color: aliceblue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+  }
+  /* navigation bar END */
+
+
+  /* image column START */
+  .img-column {
+    padding-left: 200px;
+  }
+  /* image column END */
+
+
+  /* title column START */
+  .info-column {
+    padding-left: 50px;
+    padding-bottom: 150px;
+  }
+
+  .intro {
+    font-size: 38px;
+    font-family: 'Bungee', cursive;
+    text-align: left;
+    line-height: 70px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  .color {
+    color: var(--tertiary);
+  }
+
+  .pop-name {
+    font-size: 60px;
+    padding-left: 175px;
+  }
+
+  div p {
+    text-align: left;
+  }
+
+  .intro-font {
+    font-size: 35px;
+  }
+
+  .pop-font {
+    font-size: 45px;
+  }
+  /* title column END */
+
+
+  /* social icon styling START */
   .wrapper {
     display: inline-flex;
     padding-top: 15px;
@@ -119,49 +193,4 @@ font-family: 'Monoton', cursive;*/
   .wrapper .email:hover .tooltip:before {
     background:var(--tertiary);
   }
-
-  /* image column START */
-  .img-column {
-    padding-left: 200px;
-  }
-  /* image column END */
-
-
-  /* title column START */
-  .info-column {
-    padding-left: 50px;
-    padding-bottom: 150px;
-  }
-
-  .intro {
-    font-size: 40px;
-    font-family: 'Bungee', cursive;
-    text-align: left;
-    line-height: 70px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-  }
-
-  .color {
-    color: var(--tertiary);
-  }
-
-  .pop-name {
-    font-size: 60px;
-    padding-left: 175px;
-  }
-
-  div p {
-    text-align: left;
-  }
-
-  .intro-font {
-    font-size: 35px;
-  }
-
-  .pop-font {
-    font-size: 45px;
-  }
-  /* title column END */
-
-
+  /* social icon styling END */
