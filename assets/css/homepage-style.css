@@ -6,6 +6,7 @@ font-family: 'Monoton', cursive;*/
     --primary: black;
     --secondary: #ccf381;
     --tertiary: #4831d4;
+    --darkish: #404040;
   } 
 
   * {
@@ -72,7 +73,7 @@ font-family: 'Monoton', cursive;*/
 
   .intro {
     font-size: 38px;
-    font-family: 'Bungee', cursive;
+    font-family: 'Monoton', cursive;
     text-align: left;
     line-height: 70px;
     padding-left: 30px;
@@ -86,6 +87,7 @@ font-family: 'Monoton', cursive;*/
   .pop-name {
     font-size: 60px;
     padding-left: 175px;
+    font-family: 'Bungee', cursive;
   }
 
   div p {
@@ -103,6 +105,10 @@ font-family: 'Monoton', cursive;*/
 
 
   /* social icon styling START */
+.wrapper a {
+  color: var(--darkish);
+}
+
   .wrapper {
     display: inline-flex;
     padding-top: 15px;
@@ -192,5 +198,11 @@ font-family: 'Monoton', cursive;*/
   .wrapper .email:hover .tooltip,
   .wrapper .email:hover .tooltip:before {
     background:var(--tertiary);
-  }
+  };
   /* social icon styling END */
+
+  /* 980 768 575 375 */
+
+  @media screen and (max-width: 1500px) {
+
+  };
