@@ -60,7 +60,8 @@ font-family: 'Monoton', cursive;*/
 
   /* image column START */
   .img-column {
-    padding-left: 200px;
+    margin-top: auto;
+    margin-left: 150px;
   }
   /* image column END */
 
@@ -198,11 +199,19 @@ font-family: 'Monoton', cursive;*/
   .wrapper .email:hover .tooltip,
   .wrapper .email:hover .tooltip:before {
     background:var(--tertiary);
-  };
+  }
   /* social icon styling END */
 
   /* 980 768 575 375 */
 
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1580px) {
 
-  };
+    .intro {
+      padding-left: 0;
+      padding-right: 100px
+    }
+
+    div p {
+      margin-right: 20px;
+    }
+  }
