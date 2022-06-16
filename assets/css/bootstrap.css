@@ -1,7 +1,5 @@
-/* font-family: 'Alumni Sans Inline One', cursive;
-font-family: 'Bungee', cursive;
-font-family: 'Gruppo', cursive;
-font-family: 'Monoton', cursive; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Work Sans', sans-serif; */
 
 :root {
   --primary: black;
@@ -19,14 +17,19 @@ font-family: 'Monoton', cursive; */
 body {
   color: black;
   background-color: white;
-  font-family: 'Bungee', cursive;
-  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 
 /* Top Navigation START */
-h1 {
-  font-family: 'Megrim', cursive;
-  font-weight: 400;
+.logo1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.logo2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 button i {
@@ -44,7 +47,6 @@ button i {
 .about, 
 .contact {
   color: white;
-  font-family: 'Monoton', cursive;
 }
 
 .home:hover,
@@ -55,7 +57,6 @@ button i {
 
 .portfolio {
   color: var(--secondary);
-  font-family: 'Monoton', cursive;
 }
 
 .portfolio:hover {
@@ -76,6 +77,19 @@ button i {
 
 /* Jumbotron START */
 
+.intro {
+  font-size: 38px;
+  font-family: 'Monoton', cursive;;
+  text-align: left;
+  line-height: 70px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
 
+.pop-name {
+  font-size: 60px;
+  padding-left: 175px;
+  font-family: 'Bungee', cursive;
+}
 
 
