@@ -1,6 +1,7 @@
+/* font-family: 'Gruppo', cursive; */
+/* font-family: 'Monoton', cursive; */
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Work Sans', sans-serif; */
-
 :root {
   --primary: black;
   --secondary: #ccf381;
@@ -17,8 +18,7 @@
 body {
   color: black;
   background-color: white;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Top Navigation START */
@@ -40,13 +40,15 @@ button i {
 #header-nav {
   background-color: var(--tertiary);
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .home, 
 .about, 
 .contact {
   color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
 .home:hover,
@@ -57,6 +59,8 @@ button i {
 
 .portfolio {
   color: var(--secondary);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
 .portfolio:hover {
@@ -68,7 +72,7 @@ button i {
 }
 
 .mobile-nav a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -76,20 +80,132 @@ button i {
 
 
 /* Jumbotron START */
-
 .intro {
-  font-size: 38px;
-  font-family: 'Monoton', cursive;;
+  font-size: 3rem;
   text-align: left;
   line-height: 70px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  font-weight: 600;
 }
 
 .pop-name {
-  font-size: 60px;
-  padding-left: 175px;
-  font-family: 'Bungee', cursive;
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--tertiary);
+  padding-left: 20px;
 }
+
+.pop-title {
+  color: var(--tertiary);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.intro-body {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+
+
+ /* social icon styling START */
+ .wrapper a {
+  color: var(--darkish);
+}
+
+  .wrapper {
+    display: inline-flex;
+    padding-top: 15px;
+  }
+
+  .wrapper .icon {
+    margin: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+
+  .wrapper .icon span {
+    position: relative;
+    z-index: 2;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: var(--secondary);
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrapper .icon span i {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .wrapper .icon .tooltip {
+    position: absolute;
+    bottom: 0px;
+    background: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrapper .icon:hover .tooltip {
+    opacity:1;
+    pointer-events: auto;
+    bottom:-70px;
+  }
+
+  .wrapper .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    top: -8px;
+    right: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  .wrapper .icon:hover span{
+    color: #fff;
+  }
+
+  .wrapper .portfolio:hover span,
+  .wrapper .portfolio:hover .tooltip,
+  .wrapper .portfolio:hover .tooltip:before {
+    background:var(--tertiary);
+  }
+
+  .wrapper .github:hover span,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip:before {
+    background:var(--tertiary);
+  }
+
+  .wrapper .linkedin:hover span,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip:before {
+    background:var(--tertiary);
+  }
+
+  .wrapper .email:hover span,
+  .wrapper .email:hover .tooltip,
+  .wrapper .email:hover .tooltip:before {
+    background:var(--tertiary);
+  }
+  /* social icon styling END */
 
 
