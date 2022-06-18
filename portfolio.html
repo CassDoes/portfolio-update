@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gruppo&family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/10c0b6b763.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/portfolio.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CassDoes</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Monoton&family=Poppins:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400;600;700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/10c0b6b763.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
 
 <body>
 
-    <!-- Navigation -->
-    <aside class="side-nav">
-        <!-- homepage -->
-        <a href="./homepage.html" class="fa-solid fa-house"></a>
-        <!-- about -->
-        <a href="#" class="fa-solid fa-circle-user"></a>
-        <!-- portfolio -->
-        <a href="./portfolio.html" class="fa-solid fa-display"></a>
-        <!-- contact -->
-        <a href="#" class="fa-solid fa-message"></a>
-    </aside>
+  <!-- Header Navigation -->
+  <nav class="navbar sticky-top navbar-expand-md" id="header-nav">
+    <h1 class="mt-1 logo1">Cass<span class="logo2">Does</span></h1>
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-toggle="collapse" 
+      data-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i></span>
+    </button>
+    <!-- Visible only on mobile view | Navigation -->
+    <div class="collapse mobile-nav text-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link about" href="/">About Me</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link portfolio" href="/">Portfolio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link contact" href="/">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link resume" href="/">Resume</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Visible on medium screensizes and larger | Navigation -->
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav ml-auto">
+        <div class="nav-item active">
+          <a href="/" class="nav-link about">About</a>
+        </div>
+        <div class="nav-item active">
+          <a href="/" class="nav-link portfolio">Portfolio</a>
+        </div>
+        <div class="nav-item active">
+          <a href="/" class="nav-link contact">Contact</a>
+        </div>
+        <div class="nav-item active">
+          <a href="/" class="nav-link resume">Resume</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
     <!-- Jumbotron -->
+    <header class="pt-3 container-fluid">
+        <div class="row justify-content-center">
+            <h1 class="text-center border-bottom pb-2 col-sm-8" style="font-size: 2.2rem;">Portfolio <span style="color: var(--tertiary); font-size: 1.75rem;">& <b>proficiencies</b></span></h1>
+        </div>
 
-    <header>
-        <h1>Portfolio <span class="pop-font">& languages</span></h1>
     </header>
 
     <main>
@@ -40,7 +78,7 @@
         <div class="container">
             <div>
                 <a href="https://cassdoes.github.io/run-buddy/" target="_blank" class="link-btn">
-                <img class="image" src="./assets/images/run-buddy.png" alt="screenshot of run-buddy website"/>
+                <img class="img-fluid" src="./assets/images/run-buddy.png" alt="screenshot of run-buddy website"/>
                 </a>
                 <div class="languages">
                     <p>HTML + CSS</p>
@@ -55,7 +93,7 @@
         <div class="container">
           <div>
                 <a href="https://cod-ez-community.herokuapp.com/" target="_blank" class="link-btn">
-                <img class="image" src="./assets/images/CODez.png" alt="screenshot of CODEZ community website"/>
+                <img class="img-fluid" src="./assets/images/CODez.png" alt="screenshot of CODEZ community website"/>
                 </a>
                 <div class="languages">
                     <a href="https://github.com/CassDoes/group2-codEZ">GitHub README.md</a>
@@ -69,7 +107,7 @@
         <div class="container">
           <div>
                 <a href="https://cassdoes.github.io/run-buddy/" target="_blank" class="link-btn">
-                <img class="image" src="./assets/images/run-buddy.png" alt="screenshot of run-buddy website"/>
+                <img class="img-fluid" src="./assets/images/run-buddy.png" alt="screenshot of run-buddy website"/>
                 </a>
                 <div class="languages">
                     <p>Node.js with Inquirer + Jest dependancies</p>
@@ -78,7 +116,34 @@
         </div>
 
     </main>
-    
-</body>
 
-</html>
+      <!-- Footer Navigation -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Social media -->
+      <div class="buttons"> 
+        <div class="wrapper d-inline-flex w-100 justify-content-center mt-2">
+          <!-- portfolio button -->
+          <div class="icon portfolio">
+            <div class="tooltip">Portfolio</div>
+            <a href="/"><span><i class="fa-solid fa-code"></i></span></a>
+          </div>
+          <!-- github button -->
+          <div class="icon github">
+            <div class="tooltip">GitHub</div>
+            <a href="https://github.com/CassDoes"><span><i class="fa-brands fa-github"></i></span></a>
+          </div>
+          <!-- linkedin button -->
+          <div class="icon linkedin">
+            <div class="tooltip">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/cassandra-hardin-53457b228/"><span><i class="fa-brands fa-linkedin"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>

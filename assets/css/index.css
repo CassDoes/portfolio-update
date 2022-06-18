@@ -113,6 +113,11 @@ button i {
   font-weight: 400;
 }
 /* About Me END */
+
+/* Portfolio START */
+
+/* Portfolio END */
+
 /* VARIABLE BODY CONTENT END */
 
 /* social icon FOOTER styling START */
@@ -124,10 +129,6 @@ button i {
 
 .wrapper a {
 color: var(--darkish);
-}
-
-.wrapper {
-  display: inline-flex;
 }
 
 .wrapper .icon {
