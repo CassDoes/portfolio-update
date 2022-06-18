@@ -80,7 +80,8 @@ button i {
 }
 /* Top Navigation END */
 
-/* VARIABLE BODY CONTENT */
+
+/* VARIABLE BODY CONTENT START */
 
 /* About Me START */
 .intro {
@@ -88,7 +89,6 @@ button i {
   text-align: left;
   line-height: 70px;
   padding-left: 30px;
-  padding-bottom: 10px;
   font-weight: 600;
 }
 
@@ -112,6 +112,8 @@ button i {
   font-size: 1.8rem;
   font-weight: 400;
 }
+/* About Me END */
+/* VARIABLE BODY CONTENT END */
 
 /* social icon FOOTER styling START */
 .footer {
