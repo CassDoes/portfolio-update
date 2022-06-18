@@ -15,10 +15,20 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   color: black;
   background-color: white;
   font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 /* Top Navigation START */
@@ -70,10 +80,11 @@ button i {
 }
 /* Top Navigation END */
 
+/* VARIABLE BODY CONTENT */
 
-/* Jumbotron START */
+/* About Me START */
 .intro {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: left;
   line-height: 70px;
   padding-left: 30px;
@@ -82,7 +93,7 @@ button i {
 }
 
 .pop-name {
-  font-size: 3.8rem;
+  font-size: 3rem;
   width: 100%;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -102,113 +113,120 @@ button i {
   font-weight: 400;
 }
 
- /* social icon styling START */
- .wrapper a {
-  color: var(--darkish);
+/* social icon FOOTER styling START */
+.footer {
+  background-color: #f1f1f1;
+  height: 65px;
+  flex-shrink: 0;
 }
 
-  .wrapper {
-    display: inline-flex;
-  }
+.wrapper a {
+color: var(--darkish);
+}
 
-  .wrapper .icon {
-    margin: 0 20px;
-    cursor: pointer;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-  }
+.wrapper {
+  display: inline-flex;
+}
 
-  .wrapper .icon span {
-    position: relative;
-    z-index: 2;
-    height: 50px;
-    width: 50px;
-    display: block;
-    background: var(--secondary);
-    border-radius: 50%;
-    text-align: center;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+.wrapper .icon {
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
 
-  .wrapper .icon span i {
-    font-size: 2rem;
-    line-height: 50px;
-  }
+.wrapper .icon span {
+  position: relative;
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  display: block;
+  background: var(--secondary);
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
-  .wrapper .icon .tooltip {
-    position: absolute;
-    bottom: 0px;
-    background: #fff;
-    font-size: 1.5rem;
-    padding: 6px 13px;
-    border-radius: 25px;
-    color: white;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+.wrapper .icon span i {
+  font-size: 2rem;
+  line-height: 50px;
+}
 
-  .wrapper .icon:hover .tooltip {
-    opacity:1;
-    pointer-events: auto;
-    bottom:60px;
-  }
+.wrapper .icon .tooltip {
+  position: absolute;
+  bottom: 0px;
+  background: #fff;
+  font-size: 1.5rem;
+  padding: 6px 13px;
+  border-radius: 25px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
-  .wrapper .portfolio .tooltip:before {
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    top: 40px;
-    right: 55%;
-    transform: translateX(-50%) rotate(45deg);
-  }
+.wrapper .icon:hover .tooltip {
+  opacity:1;
+  pointer-events: auto;
+  bottom:60px;
+}
 
-  .wrapper .github .tooltip:before {
-    position: absolute;
-    content: "";
-    height: 13px;
-    width: 13px;
-    top: 40px;
-    right: 37%;
-    transform: translateX(-50%) rotate(45deg);
-  }
+.wrapper .portfolio .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  top: 40px;
+  right: 55%;
+  transform: translateX(-50%) rotate(45deg);
+}
 
-  .wrapper .linkedin .tooltip:before {
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    top: 40px;
-    right: 23%;
-    transform: translateX(-50%) rotate(45deg);
-  }
+.wrapper .github .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  top: 40px;
+  right: 37%;
+  transform: translateX(-50%) rotate(45deg);
+}
 
-  .wrapper .icon:hover span{
-    color: #fff;
-  }
+.wrapper .linkedin .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  top: 40px;
+  right: 23%;
+  transform: translateX(-50%) rotate(45deg);
+}
 
-  .wrapper .portfolio:hover span,
-  .wrapper .portfolio:hover .tooltip,
-  .wrapper .portfolio:hover .tooltip:before {
-    background:var(--tertiary);
-  }
+.wrapper .icon:hover span{
+  color: #fff;
+}
 
-  .wrapper .github:hover span,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip:before {
-    background:var(--tertiary);
-  }
+.wrapper .portfolio:hover span,
+.wrapper .portfolio:hover .tooltip,
+.wrapper .portfolio:hover .tooltip:before {
+  background:var(--tertiary);
+}
 
-  .wrapper .linkedin:hover span,
-  .wrapper .linkedin:hover .tooltip,
-  .wrapper .linkedin:hover .tooltip:before {
-    background:var(--tertiary);
-  }
-  /* social icon styling END */
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before {
+  background:var(--tertiary);
+}
+
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip:before {
+  background:var(--tertiary);
+}
+/* social icon FOOTER styling END */
+
 
 
