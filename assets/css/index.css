@@ -82,7 +82,6 @@ button i {
 
 
 /* VARIABLE BODY CONTENT START */
-
 /* About Me START */
 .intro {
   font-size: 2.5rem;
@@ -115,9 +114,44 @@ button i {
 /* About Me END */
 
 /* Portfolio START */
+h5 {
+  font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+  color: var(--darkish);
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.img-box:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.overlay-text {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.img-box:hover .overlay-text {
+  opacity: 1;
+}
 /* Portfolio END */
-
 /* VARIABLE BODY CONTENT END */
 
 /* social icon FOOTER styling START */
