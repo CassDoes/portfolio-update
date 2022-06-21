@@ -1,6 +1,7 @@
 /* font-family: 'Gruppo', cursive; */
-/* font-family: 'Monoton', cursive; */
 /* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Quicksand', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Work Sans', sans-serif; */
 :root {
   --primary: black;
@@ -152,6 +153,32 @@ h5 {
   opacity: 1;
 }
 /* Portfolio END */
+
+/* Contact Form START */
+#form-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-background {
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--darkish);
+}
+
+#btn-submit {
+  background-color: var(--tertiary);
+  font-size: 1rem;
+  border: none;
+}
+
+#btn-submit:hover {
+  background-color: var(--darkish);
+}
+
+.form-control {
+  background-color: #f1f1f1;
+}
+/* Contact Form END */
 /* VARIABLE BODY CONTENT END */
 
 /* social icon FOOTER styling START */
